@@ -2,15 +2,16 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: rgb(5, 5, 5);
+  background-color: rgb(35, 35, 35);
   overflow: hidden;
 }
 
   .form {
-    margin-top: 31vh;
-    position: relative;
     z-index: 9999;
-    margin-left: 35vw;
+    position: fixed; /* Ändere die Position zu fixed */
+    top: 50%; /* Setze den oberen Abstand auf 50% */
+    left: 50%; /* Setze den linken Abstand auf 50% */
+    transform: translate(-50%, -50%); /* Zentriere das Element */
     display: flex;
     flex-direction: column;
     background: #606060a9;
@@ -79,6 +80,7 @@ body {
 
 
   .container {
+    
     z-index: -1;
   }
   @keyframes snow {
@@ -415,23 +417,26 @@ body {
     padding: 0;
     background-color: rgb(35, 35, 35);
     overflow: hidden;
+    position: fixed;
+    width: 100%;
   }
   
-    .form {
-      margin-top: 32vh;
-      position: relative;
-      z-index: 9999;
-      margin-left: 10vw;
-      display: flex;
-      flex-direction: column;
-      background: #606060a9;
-      background: -webkit-linear-gradient(to right, #373737b0, #696969dd);
-      background: linear-gradient(to right, #333333ca, #1a1a1a92);
-      padding: 20px;
-      border-radius: 10px;
-      width: 200px;
-      height: 220px;
-    }
+  .form {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    background: #606060a9;
+    background: -webkit-linear-gradient(to right, #373737b0, #696969dd);
+    background: linear-gradient(to right, #333333ca, #1a1a1a92);
+    padding: 20px;
+    border-radius: 10px;
+    width: 200px;
+    height: 220px;
+  }
     
     .title {
       font-size: 2rem;
@@ -490,6 +495,7 @@ body {
   
   
     .container {
+      
       z-index: -1;
     }
     @keyframes snow {
@@ -615,15 +621,16 @@ body {
     
     .star-position7 {
       top: 30px;
-      left: 780px;
+      left: 768px;
     }
     
     .astronaut {
+      top: 80%;
       width: 250px;
       height: 300px;
       position: absolute;
       z-index: 11;
-      top: calc(50% - 150px);
+      top: calc(100% - -27vh);
       left: calc(50% - 125px);
       animation: astronaut 5s linear infinite;
     }
