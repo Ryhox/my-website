@@ -8,10 +8,10 @@ body {
 
   .form {
     z-index: 9999;
-    position: fixed; 
-    top: 50%; 
-    left: 50%; 
-    transform: translate(-50%, -50%); 
+    position: fixed; /* Ändere die Position zu fixed */
+    top: 50%; /* Setze den oberen Abstand auf 50% */
+    left: 50%; /* Setze den linken Abstand auf 50% */
+    transform: translate(-50%, -50%); /* Zentriere das Element */
     display: flex;
     flex-direction: column;
     background: #606060a9;
@@ -205,8 +205,12 @@ body {
 
 }
 @media (max-width: 768px) {
+  html, body {
+    overflow-x: hidden;
+  }
+  
   body {
-    
+    position: relative;
     margin: 0;
     padding: 0;
     background-color: rgb(35, 35, 35);
@@ -314,7 +318,7 @@ body {
     .box-of-star2,
     .box-of-star3,
     .box-of-star4 {
-      width: 100%;
+      width: 100vw;
       position: absolute;
       z-index: 10;
       left: 0;
@@ -390,6 +394,8 @@ body {
       top: 60px;
       left: 35vw;
     }
+    
+
     
 
 }
