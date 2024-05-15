@@ -206,12 +206,13 @@ body {
 }
 @media (max-width: 768px) {
   body {
+    
     margin: 0;
     padding: 0;
     background-color: rgb(35, 35, 35);
     overflow: hidden;
     position: fixed;
-    width: 100vw;
+    max-width: 100vw;
     height: 100vh;
   }
   
@@ -374,38 +375,38 @@ body {
     }
     
     .star-position1 {
-      top: 4%;
-      left: 1%;
+      top: 30px;
+      left: 20px;
     }
     
     .star-position2 {
-      top: 5%;
-      left: 15%;
+      top: 110px;
+      left: 250px;
     }
     
     .star-position3 {
-      top: 10%;
-      left: 40%;
+      top: 60px;
+      left: 570px;
     }
     
     .star-position4 {
-      top: 3%;
-      left: 50%;
+      top: 120px;
+      left: 900px;
     }
     
     .star-position5 {
-      top: 5%;
-      left: 65%;
+      top: 20px;
+      left: 1120px;
     }
     
     .star-position6 {
-      top: 30%;
-      left: 80%;
+      top: 90px;
+      left: 1280px;
     }
     
     .star-position7 {
-      top: 5%;
-      left: 100%;
+      top: 30px;
+      left: 1480px;
     }
     
 
