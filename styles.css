@@ -104,13 +104,13 @@ body {
   .box-of-star2,
   .box-of-star3,
   .box-of-star4 {
-    width: 100%;
+    width: 100vw;
+    height: 100vh;
     position: absolute;
     z-index: 10;
     left: 0;
     top: 0;
     transform: translateY(0px);
-    height: 1700px;
   }
   
   .box-of-star1 {
