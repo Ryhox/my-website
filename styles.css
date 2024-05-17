@@ -114,19 +114,19 @@ body {
   }
   
   .box-of-star1 {
-    animation: snow 5s linear infinite;
+    animation: snow 10s linear infinite;
   }
   
   .box-of-star2 {
-    animation: snow 5s -1.64s linear infinite;
+    animation: snow 10s -1.64s linear infinite;
   }
   
   .box-of-star3 {
-    animation: snow 5s -2.30s linear infinite;
+    animation: snow 10s -2.30s linear infinite;
   }
   
   .box-of-star4 {
-    animation: snow 5s -3.30s linear infinite;
+    animation: snow 10s -3.30s linear infinite;
   }
   
   .star {
