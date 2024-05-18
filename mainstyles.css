@@ -566,3 +566,17 @@ body {
 .sidebar-container.show {
     left: 0; /* Zeige die Sidebar, indem du sie nach links bewegst */
 }
+
+.sidebarheader {
+    font-size: 20px;
+    color: green;
+}
+.sidebarheader {
+    font-size: 15px;
+    padding: 5px;
+    color: white;
+}
+.sidebarheader:hover {
+    color: green;
+}
+
