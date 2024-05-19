@@ -2,11 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>cool  site!</title>
+    <meta content='width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;' name='viewport' />
+    <meta name="viewport" content="width=device-width" />
+      <title>Ryhox his Website :)</title>
+    <link rel="icon" type="image/png" href="/pics/fufuee.png"/>
+    <meta http-equiv='cache-control' content='no-cache'> 
+    <meta http-equiv='expires' content='0'> 
+    <meta http-equiv='pragma' content='no-cache'>
     <link rel="stylesheet" href="mainstyles.css">
     <link href="https://fonts.cdnfonts.com/css/minecraft-3" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <script>
 
 var isLightMode = true; 
@@ -51,10 +56,10 @@ function toggleDarkMode() {
                 window.location.href = "https://cornhub.website/";
             }
             function link3() {
-                window.location.href = "aboutme";
+                window.location.href = "aboutme.html";
             }
             function link4() {
-                window.location.href = "games";
+                window.location.href = "games.html";
             }
 
             function openSidebar() {
@@ -67,6 +72,11 @@ function toggleDarkMode() {
         </script>
 </head>
 <body>
+
+
+    
+
+
     <div class="container">
     <div id="wheel-and-hamster" aria-label="Orange and tan hamster running in a metal wheel" role="img" class="wheel-and-hamster">
         <div class="wheel"></div>
@@ -90,70 +100,55 @@ function toggleDarkMode() {
     <div id="content" class="header">
         <div class="button-container">
 
-            <button class="sidebar-button" onclick="this.classList.toggle('opened'); this.setAttribute('aria-expanded', this.classList.contains('opened')); openSidebar()" aria-label="Open Sidebar">
-                <svg width="65" height="65" viewBox="0 0 100 100">
-                  <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
-                  <path class="line line2" d="M 20,50 H 80" />
-                  <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
-                </svg>
-              </button>
-
             <button class="button"><img src="pics/pic.jpg" class="pic" alt="katze"></button>
-            <button class="button3">
-                <label class="switch">
-                    <input type="checkbox" class="input__check" onclick="toggleLightMode()">
-                    <span class="slider"></span>
-                </label>
+
+            <div class="headertext">
+                A tiny Site by <div class="colorGreen">Ryhox</div>
+            </div>
+            <button class="button">
+                <i class="fa-regular fa-user"></i>
             </button>
         </div>
-
-        <div id="sidebar" class="sidebar-container">
-            <ul>
-                <div class="sidebarheader"><li><a href="#">Worlds Best Website ig?</a></li></div>
-
-                <div class="sidebartext"><li><a href="/Pussys">Pussys</a></li>
-                <li><a href="/Corn">Corn</a></li>
-                <li><a href="/Aboutme">About Me</a></li>
-                <li><a href="/games">Games</a></li>
-                    </div>
-            </ul>
-        </div>
         
+    <div class="colorGreenWelcome">WELCOME!</div>
 
 
+        <div class="background">
+            <div class="circle circle1"></div>
+            <div class="circle circle2"></div>
+          </div>
 
-        <div class="headertext">
-            A tiny Site by <div class="colorGreen">Ryhox</div>
-        </div>
         <div class="selections">
             <div class="selection" onclick="link1()">
-                <video src="pics/pussys.mp4" muted autoplay loop class="pics"></video>
                 <div class="name">
                     Pussys
                 </div>
             </div>
 
             <div class="selection" onclick="link2()">
-                <img src="pics/corn.png" class="pics" alt="katze">
                 <div class="name">
                     Corn
                 </div>
             </div>
             <div class="selection" onclick="link3()">
-                <img src="pics/pic.jpg" class="pics" alt="katze">
                 <div class="name">
                     ABOUT ME!
                 </div>
             </div>
             <div class="selection" onclick="link4()">
-                <img src="pics/gamingcat.jpg" class="pics" alt="katze">
-
                 <div class="name">
                     Games
                 </div>
             </div>
         </div>
     </div>
-
+    <a href="mailto:message@ryhox.xyz" style="text-decoration: none;">
+    <div class="tooltip-container">
+        <span class="tooltip">message@ryhox.xyz</span>
+        <div class="hi">say hi!</div>
+      </div>
+    </a>
+      
+      
 </body>
 </html>
