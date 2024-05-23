@@ -59,11 +59,11 @@ function toggleDarkMode() {
                 window.location.href = "games.html";
             }
 
-            function openSidebar() {
-    var sidebar = document.getElementById('sidebar');
-    sidebar.classList.toggle('show'); 
-}
 
+    function mailsendmenu() {
+        var maincontainer = document.getElementById('maincontainer');
+        maincontainer.style.left = '200vw';
+    }
 
 
         </script>
@@ -71,7 +71,7 @@ function toggleDarkMode() {
 <body>
 
 
-    
+    <div class="maincontainer">
 
 
     <div class="container">
@@ -95,25 +95,17 @@ function toggleDarkMode() {
     </div>
 </div>
     <div id="content" class="header">
-        <div class="button-container">
-
-            <button class="button"><img src="pics/pic.jpg" class="pic" alt="katze"></button>
-
-            <div class="headertext">
-                A tiny Site by <div class="colorGreen">Ryhox</div>
-            </div>
-            <button class="button">
-                <i class="fa-regular fa-user"></i>
-            </button>
-        </div>
-        
-    <div class="colorGreenWelcome">WELCOME!</div>
 
 
-        <div class="background">
-            <div class="circle circle1"></div>
-            <div class="circle circle2"></div>
-          </div>
+
+        <div class="websiteName">Ryhox.xyz</div>
+
+<div class="welcome">A Site by <div class="colorAqua">Ryhox</div>
+
+
+
+            
+
 
         <div class="selections">
             <div class="selection" onclick="link1()">
@@ -133,13 +125,11 @@ function toggleDarkMode() {
             </div>
         </div>
     </div>
-    <a href="mailto:message@ryhox.xyz" style="text-decoration: none;">
-    <div class="tooltip-container">
+    <div class="tooltip-container" onclick="mailsendmenu()">
         <span class="tooltip">message@ryhox.xyz</span>
         <div class="hi">say hi!</div>
       </div>
-    </a>
       
-      
+    </div>
 </body>
 </html>
