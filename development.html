@@ -8,64 +8,9 @@
     <meta http-equiv='cache-control' content='no-cache'> 
     <meta http-equiv='expires' content='0'> 
     <meta http-equiv='pragma' content='no-cache'>
-    <link rel="stylesheet" href="mainstyles.css">
+    <link rel="stylesheet" href="css/mainstyles.css">
     <link href="https://fonts.cdnfonts.com/css/minecraft-3" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <script>
-
-var isLightMode = true; 
-
-function toggleLightMode() {
-    var link = document.querySelector('link[href="mainstyles.css"]');
-    if (isLightMode) {
-        link.href = 'styles2.css';
-        isLightMode = false;
-
-    } else {
-        toggleDarkMode();
-    }
-}
-function toggleDarkMode() {
-    var link = document.querySelector('link[href="mainstyles2.css"]');
-    if (!isLightMode) {
-        link.href = 'styles.css';
-        isLightMode = true;
-
-    } else {
-        toggleLightMode();
-    }
-}
-
-
-
-
-
-
-            document.addEventListener("DOMContentLoaded", function() {
-                setTimeout(function() {
-                    document.getElementById("wheel-and-hamster").style.display = "none";
-                    document.getElementById("content").style.display = "block";
-                }, 1000);
-            });
-            function link1() {
-                
-                window.location.href = "https://www.pinterest.it/search/pins/?q=cats&rs=typed";
-            }
-            function link2() {
-                window.location.href = "aboutme.html";
-            }
-            function link3() {
-                window.location.href = "games.html";
-            }
-
-
-    function mailsendmenu() {
-        var maincontainer = document.getElementById('maincontainer');
-        maincontainer.style.left = '200vw';
-    }
-
-
-        </script>
 </head>
 <body>
 
@@ -124,11 +69,14 @@ function toggleDarkMode() {
             </div>
         </div>
     </div>
-    <div class="tooltip-container" onclick="mailsendmenu()">
+
+    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=message@ryhox.xyz" style="text-decoration: none;">
+    <div class="tooltip-container">
         <span class="tooltip">message@ryhox.xyz</span>
         <div class="hi">say hi!</div>
       </div>
-      
     </div>
+</a>
+    <script src="/scripts/mainscript.js"></script>
 </body>
 </html>
