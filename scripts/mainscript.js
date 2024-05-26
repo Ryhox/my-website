@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
     setTimeout(function() {
-        document.getElementById("wheel-and-hamster").style.display = "none";
+        document.getElementById("loading").style.display = "none";
         document.getElementById("content").style.display = "block";
     }, 1000);
 });
@@ -14,3 +14,8 @@ function link2() {
 function link3() {
     window.location.href = "games.html";
 }
+
+  
+  
+  
+  
