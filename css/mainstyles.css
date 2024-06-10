@@ -480,14 +480,14 @@ body {
   left: -15vw;
   position: absolute;
   animation: moveRight2 9.5s infinite linear, changeTop2 19s infinite linear;
-  animation-delay: 5s;
+  animation-delay: 7s;
   z-index: -2;
 }
 .catcontainer3 {
   left: -15vw;
   position: absolute;
-  animation: moveRight3 15s infinite linear, changeTop3 24s infinite linear;
-  animation-delay: 2s;
+  animation: moveRight3 10s infinite linear, changeTop3 24s infinite linear;
+  animation-delay: 20s;
   z-index: -3;
 }
     /*  The to the right animation for the Flying Cats */
