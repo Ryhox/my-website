@@ -892,7 +892,7 @@ body {
 
 
 .animated-button {
-  left: 2.5vw;
+  left: 1.5vw;
   top: 100%;
   position: relative;
   display: flex;
@@ -921,10 +921,6 @@ body {
   transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
-.animated-button .arr-1 {
-  right: 16px;
-}
-
 .animated-button .arr-2 {
   left: -25%;
 }
@@ -946,7 +942,7 @@ body {
   font-family: 'Minecraft', sans-serif;
   position: relative;
   z-index: 1;
-  transform: translateX(-12px);
+  transform: translateX(0px);
   transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
@@ -956,9 +952,6 @@ body {
   border-radius: 12px;
 }
 
-.selection:hover .animated-button .arr-1 {
-  right: -25%;
-}
 
 .selection:hover .animated-button .arr-2 {
   left: 16px;
@@ -1956,15 +1949,17 @@ body {
   
   
   /* The selections no explanation needed ig*/
-.selections {
-  margin-left: 12.5vw;
-  z-index: -3;
-  display: flex;
-  align-items: center;
-  width: 100%;
-  transition: all ease-in-out 0.3s;
-  text-align: center;
-}
+  .selections {
+    z-index: -3;
+    display: flex;
+    align-items: center;
+    width: 80vw;
+    transition: all ease-in-out 0.3s;
+    text-align: center;
+    margin: 0 auto; /* Center the container */
+    justify-content: center; /* Align items horizontally */
+    flex-wrap: wrap; /* Allow wrapping if needed */
+  }
 .selection {
   margin-top: 3%;
   margin-right: 1%;
@@ -2005,7 +2000,7 @@ body {
   background-image: url('../pics/gamingcat.jpg');
 }
 .animated-button {
-  left: 5vw;
+  left: 1.5vw;
   top: 95%;
   position: relative;
   display: flex;
@@ -2033,9 +2028,6 @@ body {
   transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
-.animated-button .arr-1 {
-  right: 16px;
-}
 
 .animated-button .arr-2 {
   left: -25%;
@@ -2067,9 +2059,6 @@ body {
   border-radius: 12px;
 }
 
-.selection:hover .animated-button .arr-1 {
-  right: -25%;
-}
 
 .selection:hover .animated-button .arr-2 {
   left: 16px;
@@ -2125,10 +2114,6 @@ body {
     transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
   }
   
-  .animated-button .arr-1 {
-    right: 2px;
-  }
-  
   .animated-button .arr-2 {
     left: -25%;
   }
@@ -2149,7 +2134,7 @@ body {
   .animated-button .text {
     position: relative;
     z-index: 1;
-    transform: translateX(-12px);
+    transform: translateX(0px);
     transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
   }
   
@@ -2159,9 +2144,6 @@ body {
     border-radius: 12px;
   }
   
-  .selection:hover .animated-button .arr-1 {
-    right: -25%;
-  }
   
   .selection:hover .animated-button .arr-2 {
     left: 16px;

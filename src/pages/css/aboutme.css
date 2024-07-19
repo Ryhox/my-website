@@ -6,17 +6,18 @@
         margin-top: 2%;
         display: flex;
         justify-content: center;
-        height: 100vh; 
     }
     .containerabout {
-        border: 2px solid black;
-        background: linear-gradient(to bottom, rgba(144, 11, 177, 0.489), rgba(252, 238, 255, 0.489));
+        margin-top: 15%;
+        background: linear-gradient(to bottom, rgba(32, 32, 32, 0.178), rgba(22, 22, 22, 0.233));
+        border: 1px solid rgba(162, 241, 252, 0.5);
         border-radius: 10px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         overflow: hidden;
-        width: 300px;
-        height: 450px;
+        width: 400px;
+        height: 550px;
         position: relative;
+        box-shadow: 0 0 30px rgb(0, 0, 0);
+
     }
     
     .banner {
@@ -44,7 +45,7 @@
         width: 70px;
         height: 70px;
         border-radius: 50%;
-        border: 2px solid rgba(255, 0, 251, 0.311);
+        border: 1px solid rgb(162, 241, 252);
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         position: relative;
         margin-top: 40px; 
@@ -56,8 +57,8 @@
         padding: 5%;
         border-radius: 10px;
         margin-top: 20px;
-        background-color: rgba(0, 27, 24, 0.247);
-        height: 250px;
+        background-color: rgba(22, 22, 22, 0.555);
+        height: 350px;
     }
     
     .username {
@@ -74,7 +75,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: rgba(0, 20, 20, 0.46);
+        background-color: rgba(19, 19, 19, 0.747);
         border-radius: 7px;
         padding: 5px;
     }
@@ -90,104 +91,88 @@
     
     .bio {
         margin: 10px;
-        font-size: 16px;
+        font-size: 24px;
         color: #d0d0d0;
         text-align: start;
     }
     
-    ul {
+
+
+      .social-container {
+        margin-top: 150px;
+        border-radius: 20px;
+        background-color: #0000005b;
+        padding: 0.5%;
+      }
+      ul {
         list-style: none;
       }
       
       .socials {
-        background-color: #2309214b;
-        padding-right: 20%;
-        padding-top: 5%;
-        padding-bottom: 5%;
-        border-radius: 10px;
-        margin-top: 25%;
         display: flex;
         justify-content: center;
         align-items: center;
       }
       .socials .icon-content {
+        left: 10%;
+        transform: translateX(-100%);
         margin: 0 10px;
         position: relative;
       }
+
       .socials .icon-content .tooltip {
-        height: auto;
         position: absolute;
-        margin-top: 40px;
+        top: -50px;
+        left: 50%;
+        transform: translateX(-50%);
         color: #fff;
+        padding: 0px 10px;
         border-radius: 5px;
         opacity: 0;
         visibility: hidden;
         font-size: 14px;
-        left: 50%;
-        transform: translateX(-50%);
-                transition: all 0.3s ease;
-
+        transition: all 0.3s ease;
       }
       .socials .icon-content:hover .tooltip {
         opacity: 1;
         visibility: visible;
-        top: -75px;
+        top: -50px;
       }
-      .socials .icon-content a {
-        position: relative;
-        overflow: hidden;
+      .socials .icon-content .link {
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 40px;
-        height: 40px;
-        border-radius: 40%;
-        color: #4d4d4d;
-        background-color: #fff;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        color: #c2c2c2;
+        background-color: #1b1b1b96;
         transition: all 0.3s ease-in-out;
       }
-      .socials .icon-content a:hover {
+      .socials .icon-content .link:hover {
         box-shadow: 3px 2px 45px 0px rgb(0 0 0 / 12%);
       }
-      .socials .icon-content a svg {
-        position: relative;
-        z-index: 1;
+      .socials .icon-content .link svg {
         width: 30px;
         height: 30px;
       }
-      .socials .icon-content a:hover {
-        color: white;
+      .socials .icon-content .link[data-social="spotify"]:hover {
+        color: #1db954;
       }
-      .socials .icon-content a .filled {
-        position: absolute;
-        top: auto;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        height: 0;
-        background-color: #000;
-        transition: all 0.3s ease-in-out;
+      .socials .icon-content .link[data-social="discord"]:hover {
+        color: #7299ee;
       }
-      .socials .icon-content a:hover .filled {
-        height: 100%;
+      .socials .icon-content .link[data-social="steam"]:hover {
+        color: #2a475e;
       }
+
+
+
+
+
+
+
       
-      .socials .icon-content a[data-social="discord"] .filled,
-      .socials .icon-content a[data-social="discord"] ~ .tooltip {
-        background-color: #7289da;
-      }
-      
-      .socials .icon-content a[data-social="steam"] .filled,
-      .socials .icon-content a[data-social="steam"] ~ .tooltip {
-        background-color: #171d25;
-      }
-      .socials .icon-content a[data-social="spotify"] .filled,
-      .socials .icon-content a[data-social="spotify"] ~ .tooltip {
-        background-color: #4bbf4f;
-
-      }
-
-
 
 }
 
@@ -197,17 +182,18 @@
     margin-top: 2%;
     display: flex;
     justify-content: center;
-    height: 100vh; 
 }
 .containerabout {
-    border: 2px solid black;
-    background: linear-gradient(to bottom, rgba(144, 11, 177, 0.489), rgba(252, 238, 255, 0.489));
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    width: 300px;
-    height: 450px;
-    position: relative;
+  margin-top: 15%;
+  background: linear-gradient(to bottom, rgba(32, 32, 32, 0.178), rgba(22, 22, 22, 0.233));
+  border: 1px solid rgba(162, 241, 252, 0.5);
+  border-radius: 10px;
+  overflow: hidden;
+  width: 400px;
+  height: 550px;
+  position: relative;
+  box-shadow: 0 0 30px rgb(0, 0, 0);
+
 }
 
 .banner {
@@ -235,7 +221,7 @@
     width: 70px;
     height: 70px;
     border-radius: 50%;
-    border: 2px solid rgba(255, 0, 251, 0.311);
+    border: 1px solid rgb(162, 241, 252);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     position: relative;
     margin-top: 40px; 
@@ -247,7 +233,7 @@
     padding: 5%;
     border-radius: 10px;
     margin-top: 20px;
-    background-color: rgba(0, 27, 24, 0.247);
+    background-color: rgba(22, 22, 22, 0.555);
     height: 250px;
 }
 
@@ -265,7 +251,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(0, 20, 20, 0.46);
+    background-color: rgba(19, 19, 19, 0.747);
     border-radius: 7px;
     padding: 5px;
 }
@@ -285,99 +271,72 @@
     color: #d0d0d0;
     text-align: start;
 }
-
-
+.social-container {
+  margin-top: 90px;
+  border-radius: 20px;
+  background-color: #0000005b;
+  padding: 0.5%;
+}
 ul {
-    list-style: none;
-  }
-  
-  .socials {
-    background-color: #2309214b;
-    padding-right: 20%;
-    padding-top: 5%;
-    padding-bottom: 5%;
-    border-radius: 10px;
-    margin-top: 25%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .socials .icon-content {
-    margin: 0 10px;
-    position: relative;
-  }
-  .socials .icon-content .tooltip {
-    height: auto;
-    position: absolute;
-    margin-top: 40px;
-    color: #fff;
-    border-radius: 5px;
-    opacity: 0;
-    visibility: hidden;
-    font-size: 14px;
-    left: 50%;
-    transform: translateX(-50%);
-            transition: all 0.3s ease;
+  list-style: none;
+}
 
-  }
-  .socials .icon-content:hover .tooltip {
-    opacity: 1;
-    visibility: visible;
-    top: -75px;
-  }
-  .socials .icon-content a {
-    position: relative;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 40px;
-    height: 40px;
-    border-radius: 40%;
-    color: #4d4d4d;
-    background-color: #fff;
-    transition: all 0.3s ease-in-out;
-  }
-  .socials .icon-content a:hover {
-    box-shadow: 3px 2px 45px 0px rgb(0 0 0 / 12%);
-  }
-  .socials .icon-content a svg {
-    position: relative;
-    z-index: 1;
-    width: 30px;
-    height: 30px;
-  }
-  .socials .icon-content a:hover {
-    color: white;
-  }
-  .socials .icon-content a .filled {
-    position: absolute;
-    top: auto;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 0;
-    background-color: #000;
-    transition: all 0.3s ease-in-out;
-  }
-  .socials .icon-content a:hover .filled {
-    height: 100%;
-  }
-  
-  .socials .icon-content a[data-social="discord"] .filled,
-  .socials .icon-content a[data-social="discord"] ~ .tooltip {
-    background-color: #7289da;
-  }
-  
-  .socials .icon-content a[data-social="steam"] .filled,
-  .socials .icon-content a[data-social="steam"] ~ .tooltip {
-    background-color: #171d25;
-  }
-  .socials .icon-content a[data-social="spotify"] .filled,
-  .socials .icon-content a[data-social="spotify"] ~ .tooltip {
-    background-color: #4bbf4f;
-
-  }
+.socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.socials .icon-content {
+  left: 15%;
+  transform: translateX(-100%);
+  margin: 0 10px;
+  position: relative;
+}
+.socials .icon-content .tooltip {
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+  padding: 0px 10px;
+  border-radius: 5px;
+  opacity: 0;
+  visibility: hidden;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+.socials .icon-content:hover .tooltip {
+  opacity: 1;
+  visibility: visible;
+  top: -50px;
+}
+.socials .icon-content .link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  color: #c2c2c2;
+  background-color: #1b1b1b96;
+  transition: all 0.3s ease-in-out;
+}
+.socials .icon-content .link:hover {
+  box-shadow: 3px 2px 45px 0px rgb(0 0 0 / 12%);
+}
+.socials .icon-content .link svg {
+  width: 30px;
+  height: 30px;
+}
+.socials .icon-content .link[data-social="spotify"]:hover {
+  color: #1db954;
+}
+.socials .icon-content .link[data-social="discord"]:hover {
+  color: #7299ee;
+}
+.socials .icon-content .link[data-social="steam"]:hover {
+  color: #2a475e;
+}
 
 
     }

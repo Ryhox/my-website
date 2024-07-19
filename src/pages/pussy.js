@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import { ref, uploadBytes, getDownloadURL, listAll } from "firebase/storage";
 import { storage } from "../firebase";
 import { v4 as uuidv4 } from "uuid";
+import "./css/mainstyles.css";
 import "./css/pussy.css";
 
 export default function Pussy() {
@@ -384,7 +385,7 @@ export default function Pussy() {
                   </div>
                   <button
                     type="button"
-                    className="animated-button"
+                    className="animated-button-upload"
                     onClick={uploadFile}
                     disabled={cooldownActive}
                   >
