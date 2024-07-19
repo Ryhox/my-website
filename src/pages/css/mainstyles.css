@@ -11,9 +11,6 @@
 
 /* start of the mainly Desktop version */
 @media (min-width: 1000px) {
-  #content {
-    display: none;
-}
 
 
 /* standard things. */
@@ -23,76 +20,19 @@ body {
   margin: 0;
   font-family: 'Minecraft', sans-serif;
   z-index: 1;
-  overflow-x: hidden;
-  overflow-y: scroll;
+  overflow: hidden;
   justify-content: center;
   align-items: center;     
-  background: rgb(27, 27, 27);
+  background: linear-gradient(120deg, rgb(34, 34, 34), rgb(17, 17, 17));
 }
-
-
-/* the scrollbar */
-::-webkit-scrollbar {
-  width: 12px;
-  height: 12px;
-}
-
-::-webkit-scrollbar-track {
-  background: #1e1e1e; 
-  border-radius: 10px; 
-}
-
-::-webkit-scrollbar-thumb {
-  background: #333333; 
-  border-radius: 10px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: #444444; 
-}
-
-* {
-  scrollbar-width: thin; 
-  scrollbar-color: #333333 #1e1e1e; 
-}
-
-@supports (scrollbar-color: #333333 #1e1e1e) {
-  * {
-    scrollbar-width: thin;
-    scrollbar-color: #333333 #1e1e1e;
-  }
-}
-
-.custom-scrollbar {
-  overflow-y: scroll;
-  height: 200px; 
-}
-
-.custom-scrollbar::-webkit-scrollbar {
-  width: 12px;
-  height: 12px;
-}
-
-.custom-scrollbar::-webkit-scrollbar-track {
-  background: #1e1e1e;
-  border-radius: 10px;
-}
-
-.custom-scrollbar::-webkit-scrollbar-thumb {
-  background: #333333;
-  border-radius: 10px;
-}
-
-.custom-scrollbar::-webkit-scrollbar-thumb:hover {
-  background: #444444;
-}
+  
 
   /* Text */
   .websiteName {
     color: rgb(162, 242, 252);
     text-align: center;
     font-size: 60px;
-    margin-top: 6%;
+    margin-top: 2%;
     font-weight: bolder;
   }  
   .welcome {
@@ -100,463 +40,14 @@ body {
     text-align: center;
     margin-top: 0.5%;
     font-size: 40px;
-    margin-bottom: 8%;
-
   }
-
-
-
-
-
-  /* ! APP */
-
-  /* when you click on an Image typee shitttttt */
-
-  .modal {
-    display: flex;
-    position: fixed;
-    z-index: 1;
-    padding-top: 60px;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgb(0, 0, 0);
-    background-color: rgba(0, 0, 0, 0.9);
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .modal-content {
-    margin: auto;
-    display: block;
-    width: 80%;
-    max-width: 700px;
-  }
-  
-  .close {
-    position: absolute;
-    top: 15px;
-    right: 35px;
-    color: #fff;
-    font-size: 40px;
-    font-weight: bold;
-    transition: 0.3s;
-  }
-  
-  .close:hover,
-  .close:focus {
-    color: #bbb;
-    text-decoration: none;
-    cursor: pointer;
-  }
-  
-  .thumbnail {
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-    cursor: pointer;
-  }
-  
-
-  /* The error that appears under the Upload button*/
-
-  .cannot-upload-message {
-    border: 0.2px solid rgba(255, 0, 0, 0.185);
-    background-color: #1313139a;
-    font-size: 17px;
-    display: flex;
-    align-items: center;
-    margin: 5px 0;
-    padding: 5px 10px 5px 30px;
-    border-radius: 5px;
-    color: rgba(197, 36, 36, 0.842);
-    margin-top: 10px;
-
-  }
-
-  
-  .cannot-upload-message .material-icons-outlined {
-    margin-right: 8px;
-  }
-  
-  .cannot-upload-message .cancel-alert-button {
-    margin-left: auto;
-    cursor: pointer;
-    transition: all ease-in-out 0.2s;
-  }
-  .cancel-alert-button:hover {
-    color:rgb(255, 0, 0);
-    transform: scale(1.01);
-    transform: translateY(-2px);
-    }
-  .cannot-upload-message span, .upload-button-icon {
-    padding-right: 10px;
-  }
-  .cannot-upload-message span:last-child {
-    padding-left: 20px;
-    cursor: pointer;
-  }
-
-
-  /* The upload Form just  look at the class names*/
-
-.form-container {
-  margin-top: 3%;
-  color: rgb(192, 192, 192);
-	display: flex;
-   	justify-content: center;
-	align-items: center;
-}
-.upload-files-container {
-  transition: all ease-in-out 0.3s;
-	background-color: #1d1d1d3b;
-	width: 420px;
-	padding: 30px 60px;
-	border-radius: 40px;
-	display: flex;
-   	align-items: center;
-   	justify-content: center;
-	flex-direction: column;
-	box-shadow: rgba(0, 0, 0, 0.24) 0px 10px 20px, rgba(0, 0, 0, 0.28) 0px 6px 6px;
-}
-.drag-file-area {
-	border: 2px dashed rgb(162, 242, 252);
-	border-radius: 40px;
-	margin: 10px 0 15px;
-	padding: 30px 50px;
-	width: 350px;
-	text-align: center;
-}
-.drag-file-area .upload-icon {
-	font-size: 50px;
-}
-.drag-file-area h3 {
-	font-size: 26px;
-	margin: 15px 0;
-}
-.drag-file-area label {
-	font-size: 19px;
-}
-.drag-file-area label .browse-files-text {
-	color: rgb(162, 242, 252);
-	font-weight: bolder;
-	cursor: pointer;
-}
-.drag-file-area label .browse-files-text:hover {
-	color: rgb(78, 117, 122);
-
-}
-.browse-files span {
-	position: relative;
-	top: -25px;
-}
-.default-file-input {
-	opacity: 0;
-}
-
-.file-block {
-	color: #f7fff7;
-	background-color: rgb(162, 242, 252);
-  	transition: all 1s;
-	width: 390px;
-	position: relative;
-	display: none;
-	flex-direction: row;
-	justify-content: space-between;
-	align-items: center;
-	margin: 10px 0 15px;
-	padding: 10px 20px;
-	border-radius: 25px;
-	cursor: pointer;
-}
-.file-info {
-	display: flex;
-	align-items: center;
-	font-size: 15px;
-}
-.file-icon {
-	margin-right: 10px;
-}
-
-
-
-/* The Upload button the same as at the homepageee  */
-
-.animated-button {
-  top: 100%;
-  position: relative;
-  display: flex;
-  align-items: center;
-  gap: 4px;
-  padding: 5% 20%;
-  border: 0px solid;
-  border-color: transparent;
-  font-size: 18px;
-  background-color: rgba(26, 26, 26, 0.849);
-  border-radius: 100px;
-  color: rgb(162, 242, 252);
-  box-shadow: 0 0 0 2px rgb(162, 242, 252);
-  cursor: pointer;
-  overflow: hidden;
-  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
-  font-family: 'Minecraft', sans-serif;
-  margin-bottom: 10%;
-
-}
-
-.animated-button i {
-  position: absolute;
-  width: 24px;
-  fill: rgb(162, 242, 252);
-  z-index: 9;
-  transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
-}
-
-.animated-button i {
-  left: -25%;
-}
-
-.animated-button .circle {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 20px;
-  height: 20px;
-  background-color: rgb(162, 242, 252);
-  border-radius: 50%;
-  opacity: 0;
-  transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
-}
-
-.animated-button .text {
-  font-family: 'Minecraft', sans-serif;
-  position: relative;
-  z-index: 1;
-  transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
-
-}
-
-.animated-button:hover {
-  box-shadow: 0 0 0 12px transparent;
-  color: #212121;
-  border-radius: 12px;
-}
-
-.animated-button:hover i {
-  left: 20px;
-}
-
-.animated-button:hover .text {
-  transform: translateX(12px);
-}
-
-.animated-button svg {
-  fill: #212121;
-}
-
-.animated-button:active {
-  scale: 0.95;
-  box-shadow: 0 0 0 4px rgb(162, 242, 252);
-}
-.animated-button:hover .circle {
-  width: 220px;
-  height: 220px;
-  opacity: 1;
-}
-
- /* The Button to open the form */
-.button {
-  font-family: 'Minecraft', sans-serif;
-  top: 90%;
-  right: 5%;
-  color: rgb(206, 206, 206);
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  background-color: rgb(20, 20, 20);
-  border: none;
-  font-weight: 600;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0px 0px 0px 4px rgba(174, 255, 160, 0.629);
-  cursor: pointer;
-  transition-duration: 0.3s;
-  overflow: hidden;
-  position: fixed;
-}
-
-.button i {
-  width: 12px;
-  transition-duration: 0.3s;
-}
-
-.button i {
-  fill: white;
-}
-
-.button:hover {
-  width: 140px;
-  border-radius: 50px;
-  transition-duration: 0.3s;
-  background-color: rgb(174, 255, 160);
-  align-items: center;
-}
-
-.button:hover i {
-  transition-duration: 0.3s;
-  transform: translateY(-240%);
-}
-
-.button::before {
-  color: rgb(54, 54, 54);
-  position: absolute;
-  bottom: -20px;
-  content: "Add Pics";
-  font-size: 0px;
-}
-
-.button:hover::before {
-  font-size: 13px;
-  opacity: 1;
-  bottom: unset;
-  transition-duration: 0.3s;
-}
-
-
-  /* the  body for the APP */
-  .App {
-    width: 100vw;
-    height: auto;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-
-  }
-/* The Image Design (!CHANGE LATER!) */
-.image-container {
-  margin-top: 2%;
-  text-align: center; 
-  width: 1200px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  transition: margin-left 0.3s ease-in-out;
-  padding: 10px; /* Adjust as needed */
-}
-
-.image-container img {
-  width: 200px;
-  height: 200px;
-  object-fit: cover;
-  transition: all ease-in-out 0.4s;
-  border-radius: 25px;
-  margin-bottom: 20px;
-
-}
-
-.image-wrapper:hover { 
-  box-shadow: 0 0 0 3px rgba(21, 255, 0, 0.158);
-  cursor: pointer;
-  transform: translateY(-5px) scale(1.05);
-}
-
-.image-container.show {
-  margin-left: 0;
-}
-
-.image-container.hide {
-  margin-left: 250%;
-}
-.image-wrapper {
-  transition: all ease-in-out 0.4s;
-
-  background-color: rgba(0, 0, 0, 0.5);
-  border-radius: 25px;
-  margin: 10px;
-  padding: 2%;
-}
-.image-username {
-  color: rgb(204, 204, 204);
-  margin-top: -2%;
-
-}
-.image-username i {
-  font-size: 14px;
-}
-.image-username-color {
-  color: rgb(0, 238, 255);
-  margin-top: -2%;
-  display: inline;
-}
-
-
-    /* Username Input */
-  .username-input {
-    font-family: 'Minecraft', sans-serif;
-    font-size: 14px;
-    border-radius: 6px;
-    line-height: 1.5;
-    padding: 5px 10px;
-    transition: box-shadow 100ms ease-in, border 100ms ease-in, background-color 100ms ease-in;
-    border: 2px solid #1f1f1f56;
-    color: rgba(255, 255, 255, 0.452);
-    background: #00000013;
-    display: block;
-    height: 36px;
-    outline: none; 
-    margin-bottom: 10%;
-    border-bottom: 2px solid #f8f8f856;
-  }
-  .username-input::placeholder {
-    color: rgba(231, 231, 231, 0.699); 
-  }
-  .username-input:hover {
-    border: 2px solid #141414c9;
-    border-bottom: 2px solid #f8f8f856;
-
-  }
-  .username-input:focus {
-    border: 1.5px solid rgba(162, 241, 252, 0.507);
-    border-bottom: 2px solid #f8f8f856;
-
-  }
-
-  /* for the form to slide in and out type shiii */
-  .form-wrapper {
-    position: fixed;
-    top: 15%;
-    left: -100%;
-    width: 100%;
-    transition: left 0.3s ease-in-out;
-    z-index: 10;
-  }
-  
-  .form-wrapper.slide-in {
-    left: 0;
-  }
-  
-  .form-wrapper.slide-out {
-    left: -100%;
-  }
-  
-
-
-
-  /*
-  STANDARD
-  PAGE 
-  WITH 
-  THE 
-  CAATS
-  */
 
 
   /* Loading page */
+  
 .container {
+  position: relative;
+  z-index: -4;
   width: 100%;
   height: 100%;
   display: flex;
@@ -1099,6 +590,7 @@ body {
 }
 
   /* The Cat Designs*/
+
   /* cat2 */
 .face_3{
   background-color: white;
@@ -1345,6 +837,264 @@ body {
   border-radius: 0 20px 20px 0;
 }
 
+
+  /* Here are the Selections - no explanation needed*/
+.selections {
+  z-index: -3;
+  display: flex;
+  align-items: center;
+  width: 80vw;
+  transition: all ease-in-out 0.3s;
+  text-align: center;
+  margin: 0 auto; /* Center the container */
+  justify-content: center; /* Align items horizontally */
+  flex-wrap: wrap; /* Allow wrapping if needed */
+}
+.selection {
+  margin-top: 3%;
+  margin-right: 1%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  width: 15%;
+  padding-left: 1%;
+  padding-right: 1%;
+  text-align: center;
+  height: 40vh;
+  font-size: 25px;
+  color: rgb(212, 212, 212);
+  background: rgba(24, 24, 24, 0.534);
+  background: linear-gradient(to right, #1111118e, #3838389a 33%, #383838a4 66%, #111111a1);
+  border-radius: 10px;
+  transition: all ease-in-out 0.3s;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.151);
+  background-size: cover;
+  background-position: center;
+  border: solid 2px rgba(0, 0, 0, 0.37);
+  filter: grayscale(0);
+}
+.selection:hover {
+  color: aqua;
+  cursor: pointer;
+  transform: scale(1.01);
+  transform: translateY(-10px);
+}
+.selection:nth-child(1) {
+  background-image: url('../pics/pussys.jpg');
+}
+
+.selection:nth-child(2) {
+  background-image: url('../pics/pic.jpg');
+}
+
+.selection:nth-child(3) {
+  background-image: url('../pics/gamingcat.jpg');
+}
+
+
+.animated-button {
+  left: 2.5vw;
+  top: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 5% 20%;
+  border: 0px solid;
+  border-color: transparent;
+  font-size: 18px;
+  background-color: rgba(26, 26, 26, 0.849);
+  border-radius: 100px;
+  color: rgb(162, 242, 252);
+  box-shadow: 0 0 0 2px rgb(162, 242, 252);
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+  font-family: 'Minecraft', sans-serif;
+
+}
+
+.animated-button svg {
+  position: absolute;
+  width: 24px;
+  fill: rgb(162, 242, 252);
+  z-index: 9;
+  transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animated-button .arr-1 {
+  right: 16px;
+}
+
+.animated-button .arr-2 {
+  left: -25%;
+}
+
+.animated-button .circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  background-color: rgb(162, 242, 252);
+  border-radius: 50%;
+  opacity: 0;
+  transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animated-button .text {
+  font-family: 'Minecraft', sans-serif;
+  position: relative;
+  z-index: 1;
+  transform: translateX(-12px);
+  transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.selection:hover .animated-button {
+  box-shadow: 0 0 0 12px transparent;
+  color: #212121;
+  border-radius: 12px;
+}
+
+.selection:hover .animated-button .arr-1 {
+  right: -25%;
+}
+
+.selection:hover .animated-button .arr-2 {
+  left: 16px;
+}
+
+.selection:hover .animated-button .text {
+  transform: translateX(12px);
+}
+
+.selection:hover .animated-button svg {
+  fill: #212121;
+}
+
+.animated-button:active {
+  scale: 0.95;
+  box-shadow: 0 0 0 4px rgb(162, 242, 252);
+}
+
+.selection:hover .animated-button .circle {
+  width: 220px;
+  height: 220px;
+  opacity: 1;
+}
+
+
+
+  /* The tooltip E-mail also no explanation needed*/
+.tooltip-container {
+  top: 20vh; 
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 90px;
+  width: 120px;
+  border-radius: 5px;
+  background-color: rgb(35, 35, 35);
+  background-image: linear-gradient(
+    to left bottom,
+    rgb(35, 35, 35),
+    rgb(41, 41, 41),
+    rgb(35, 35, 35),
+    rgb(41, 41, 41),
+    rgb(35, 35, 35)
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.151);
+  position: relative;
+  transition: transform 0.3s ease;
+}
+.tooltip-container::before {
+  
+  position: absolute;
+  content: "";
+  top: -50%;
+  clip-path: polygon(50% 0, 0 100%, 100% 100%);
+  border-radius: 5px;
+  background-color: rgb(35, 35, 35);
+  background-image: linear-gradient(
+    to left bottom,
+    rgb(35, 35, 35),
+    rgb(41, 41, 41),
+    rgb(35, 35, 35),
+    rgb(41, 41, 41),
+    rgb(35, 35, 35)
+  );
+  width: 100%;
+  height: 50%;
+  transform-style: preserve-3d;
+  transform: perspective(1000px) rotateX(-150deg) translateY(-110%);
+  transition: transform 0.3s ease;
+}
+
+.tooltip-container .text {
+  
+  color: rgb(65, 65, 65);
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.tooltip {
+  position: absolute;
+  top: -20px;
+  opacity: 0;
+  color: rgb(177, 177, 177);
+  background-size: 4px 4px, 4px 4px, 80px 80px, 80px 80px, 80px 80px, 80px 80px,
+    80px 80px, 80px 80px;
+  padding: 5px 10px;
+  height: 70px;
+  width: 110px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition-duration: 0.2s;
+  pointer-events: none;
+  letter-spacing: 0.5px;
+  font-size: 18px;
+  font-weight: 600;
+  text-shadow: 10px salmon;
+}
+.tooltip-container:hover {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+
+}
+
+.tooltip-container:hover::before {
+  transform: rotateY(0);
+  background-image: none;
+  background-color: rgb(35, 35, 35);
+
+}
+
+.tooltip-container:hover .tooltip {
+  top: -80px;
+  opacity: 1;
+  transition-duration: 0.3s;
+  
+}
+
+.hi {
+    
+color: rgb(65, 65, 65);
+font-weight: bold;
+margin-right: 10%;
+}
+.tooltip-container:hover .hi {
+color: aqua;
+font-weight: bold;
+margin-right: 10%;
+}
+
+
+
 }
 
 
@@ -1353,23 +1103,19 @@ body {
 
 
 
-  /* 
-  The
-  small
-  screen 
-  and
-  phone
-  Version
-  */
 
 
 
 
+
+
+
+
+
+
+ /* The small screen and phone Version*/
 @media (max-width: 1000px) {
 
-  #content {
-    display: none;
-}
 
  /* Basic Body again */
 body {
@@ -2207,7 +1953,347 @@ body {
   }
   
   
+  
+  
+  /* The selections no explanation needed ig*/
+.selections {
+  margin-left: 12.5vw;
+  z-index: -3;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  transition: all ease-in-out 0.3s;
+  text-align: center;
+}
+.selection {
+  margin-top: 3%;
+  margin-right: 1%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  width: 25%;
+  padding-left: 1%;
+  padding-right: 1%;
+  text-align: center;
+  height: 40vh;
+  font-size: 25px;
+  color: rgb(212, 212, 212);
+  background: rgba(24, 24, 24, 0.534);
+  background: linear-gradient(to right, #1111118e, #3838389a 33%, #383838a4 66%, #111111a1);
+  border-radius: 10px;
+  transition: all ease-in-out 0.3s;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.151);
+  background-size: cover;
+  background-position: center;
+  border: solid 2px rgba(0, 0, 0, 0.37);
+  filter: grayscale(0);
+}
+.selection:hover {
+  cursor: pointer;
+  transform: scale(1.01);
+  transform: translateY(-10px);
 
+}
+.selection:nth-child(1) {
+  background-image: url('../pics/pussys.jpg');
+}
+
+.selection:nth-child(2) {
+  background-image: url('../pics/pic.jpg');
+}
+
+.selection:nth-child(3) {
+  background-image: url('../pics/gamingcat.jpg');
+}
+.animated-button {
+  left: 5vw;
+  top: 95%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 5% 15%;
+  border: 0px solid;
+  border-color: transparent;
+  font-size: 15px;
+  background-color: rgba(26, 26, 26, 0.849);
+  border-radius: 100px;
+  color: rgb(162, 242, 252);
+  box-shadow: 0 0 0 2px rgb(162, 242, 252);
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+  font-family: 'Minecraft', sans-serif;
+
+}
+
+.animated-button svg {
+  position: absolute;
+  width: 20px;
+  fill: rgb(162, 242, 252);
+  z-index: 9;
+  transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animated-button .arr-1 {
+  right: 16px;
+}
+
+.animated-button .arr-2 {
+  left: -25%;
+}
+
+.animated-button .circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  background-color: rgb(162, 242, 252);
+  border-radius: 50%;
+  opacity: 0;
+  transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animated-button .text {
+  position: relative;
+  z-index: 1;
+  transform: translateX(-12px);
+  transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.selection:hover .animated-button {
+  box-shadow: 0 0 0 12px transparent;
+  color: #212121;
+  border-radius: 12px;
+}
+
+.selection:hover .animated-button .arr-1 {
+  right: -25%;
+}
+
+.selection:hover .animated-button .arr-2 {
+  left: 16px;
+}
+
+.selection:hover .animated-button .text {
+  transform: translateX(12px);
+}
+
+.selection:hover .animated-button svg {
+  fill: #212121;
+}
+
+.animated-button:active {
+  scale: 0.95;
+  box-shadow: 0 0 0 4px rgb(162, 242, 252);
+}
+
+.selection:hover .animated-button .circle {
+  width: 220px;
+  height: 220px;
+  opacity: 1;
+}
+
+@media (max-width: 600px) {
+  .animated-button {
+    left: -1vw;
+    margin-right: 2.5vw;
+    top: 98%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 5% 30%;
+    border: 0px solid;
+    border-color: transparent;
+    font-size: 12px;
+    background-color: rgba(26, 26, 26, 0.849);
+    border-radius: 100px;
+    color: rgb(162, 242, 252);
+    box-shadow: 0 0 0 2px rgb(162, 242, 252);
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+    font-family: 'Minecraft', sans-serif;
+  
+  }
+  
+  .animated-button svg {
+    position: absolute;
+    width: 15px;
+    fill: rgb(162, 242, 252);
+    z-index: 9;
+    transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  
+  .animated-button .arr-1 {
+    right: 2px;
+  }
+  
+  .animated-button .arr-2 {
+    left: -25%;
+  }
+  
+  .animated-button .circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20px;
+    height: 20px;
+    background-color: rgb(162, 242, 252);
+    border-radius: 50%;
+    opacity: 0;
+    transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  
+  .animated-button .text {
+    position: relative;
+    z-index: 1;
+    transform: translateX(-12px);
+    transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  
+  .selection:hover .animated-button {
+    box-shadow: 0 0 0 12px transparent;
+    color: #212121;
+    border-radius: 12px;
+  }
+  
+  .selection:hover .animated-button .arr-1 {
+    right: -25%;
+  }
+  
+  .selection:hover .animated-button .arr-2 {
+    left: 16px;
+  }
+  
+  .selection:hover .animated-button .text {
+    transform: translateX(12px);
+  }
+  
+  .selection:hover .animated-button svg {
+    fill: #212121;
+  }
+  
+  .animated-button:active {
+    scale: 0.95;
+    box-shadow: 0 0 0 4px rgb(162, 242, 252);
+  }
+  
+  .selection:hover .animated-button .circle {
+    width: 220px;
+    height: 220px;
+    opacity: 1;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+  /* The E-mail tooltip also no explanation needed ig */
+.tooltip-container {
+  top: 20vh; 
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 70px;
+  width: 110px;
+  border-radius: 5px;
+  background-color: rgb(35, 35, 35);
+  background-image: linear-gradient(
+    to left bottom,
+    rgb(35, 35, 35),
+    rgb(41, 41, 41),
+    rgb(35, 35, 35),
+    rgb(41, 41, 41),
+    rgb(35, 35, 35)
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.151);
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.tooltip-container::before {
+  position: absolute;
+  content: "";
+  top: -50%;
+  clip-path: polygon(50% 0, 0 100%, 100% 100%);
+  border-radius: 5px;
+  background-color: rgb(35, 35, 35);
+  background-image: linear-gradient(
+    to left bottom,
+    rgb(35, 35, 35),
+    rgb(41, 41, 41),
+    rgb(35, 35, 35),
+    rgb(41, 41, 41),
+    rgb(35, 35, 35)
+  );
+  width: 100%;
+  height: 50%;
+  transform-style: preserve-3d;
+  transform: perspective(1000px) rotateX(-150deg) translateY(-110%);
+  transition: transform 0.3s ease;
+}
+.tooltip-container .text {
+  
+  color: rgb(65, 65, 65);
+  font-weight: bold;
+  font-size: 40px;
+}
+.tooltip {
+  position: absolute;
+  top: -20px;
+  opacity: 0;
+  color: rgb(177, 177, 177);
+  background-size: 4px 4px, 4px 4px, 80px 80px, 80px 80px, 80px 80px, 80px 80px,
+    80px 80px, 80px 80px;
+  padding: 5px 10px;
+  height: 70px;
+  width: 110px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition-duration: 0.2s;
+  pointer-events: none;
+  letter-spacing: 0.5px;
+  font-size: 18px;
+  font-weight: 600;
+  text-shadow: 10px salmon;
+}
+.tooltip-container:hover {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+.tooltip-container:hover::before {
+  transform: rotateY(0);
+  background-image: none;
+  background-color: rgb(35, 35, 35);
+}
+.tooltip-container:hover .tooltip {
+  top: -80px;
+  opacity: 1;
+  transition-duration: 0.3s;
+}
+.hi {
+color: rgb(65, 65, 65);
+font-weight: bold;
+margin-right: 10%;
+}
+.tooltip-container:hover .hi {
+color: aqua;
+font-weight: bold;
+margin-right: 10%;
+}
 
 
 

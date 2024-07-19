@@ -7,8 +7,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 
-function link1() {
-    location.href = "./pussy.html";
-}
+  
   
   
