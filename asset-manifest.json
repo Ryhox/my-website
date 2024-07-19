@@ -1,15 +1,23 @@
 {
   "files": {
-    "main.css": "/static/css/main.70febb9e.css",
-    "main.js": "/static/js/main.a77a0677.js",
+    "main.css": "/static/css/main.41f7768c.css",
+    "main.js": "/static/js/main.05f3c13e.js",
     "static/js/453.e93987a6.chunk.js": "/static/js/453.e93987a6.chunk.js",
+    "static/media/badge3.png": "/static/media/badge3.d64fd2f5bfb8b9135f5e.png",
+    "static/media/badge2.png": "/static/media/badge2.6fc735b51865b3fe11c2.png",
+    "static/media/badge1.png": "/static/media/badge1.0a4129a95f5a85cc6b43.png",
+    "static/media/banner.png": "/static/media/banner.75b7b4757c0110e3eab1.png",
+    "static/media/fufuee.png": "/static/media/fufuee.83ea0fb03997c00dd5cd.png",
+    "static/media/pic.jpg": "/static/media/pic.50c0c7084e24ffb8336b.jpg",
+    "static/media/gamingcat.jpg": "/static/media/gamingcat.bab71a208332ac872880.jpg",
+    "static/media/pussys.jpg": "/static/media/pussys.c933948632f8c065f118.jpg",
     "index.html": "/index.html",
-    "main.70febb9e.css.map": "/static/css/main.70febb9e.css.map",
-    "main.a77a0677.js.map": "/static/js/main.a77a0677.js.map",
+    "main.41f7768c.css.map": "/static/css/main.41f7768c.css.map",
+    "main.05f3c13e.js.map": "/static/js/main.05f3c13e.js.map",
     "453.e93987a6.chunk.js.map": "/static/js/453.e93987a6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.70febb9e.css",
-    "static/js/main.a77a0677.js"
+    "static/css/main.41f7768c.css",
+    "static/js/main.05f3c13e.js"
   ]
 }
