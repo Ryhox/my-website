@@ -21,11 +21,29 @@ export default function Pussy() {
   const [username, setUsername] = useState("");
   const fileInputRef = useRef(null);
 
-  const MAX_FILE_SIZE = 5 * 1024 * 1024;
+  const MAX_FILE_SIZE = 5 * 1024 * 1024; // 5MB
   const MAX_UPLOADS_PER_DAY = 3;
   const COOLDOWN_PERIOD = 10;
 
   const imagesListRef = ref(storage, "images/");
+
+  // Detect if the user is on a mobile device
+  const isMobileDevice = () => {
+    return (
+      /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+        navigator.userAgent
+      ) || window.innerWidth <= 768
+    );
+  };
+
+  // Set drag and drop text based on the device type
+  useEffect(() => {
+    if (isMobileDevice()) {
+      setDragDropText(""); // Disable drag-and-drop text for mobile users
+    } else {
+      setDragDropText("Drag & drop any file here");
+    }
+  }, []);
 
   useEffect(() => {
     listAll(imagesListRef).then((response) => {
@@ -43,6 +61,14 @@ export default function Pussy() {
       setUploadsToday(savedData[today]);
     }
   }, []);
+
+  const toggleBodyScrolling = (disable) => {
+    if (disable) {
+      document.body.style.overflowY = "hidden";
+    } else {
+      document.body.style.overflowY = "auto";
+    }
+  };
 
   const updateUploadData = () => {
     const today = new Date().toISOString().split("T")[0];
@@ -102,19 +128,21 @@ export default function Pussy() {
     startCooldown();
 
     const imageRef = ref(storage, `images/${username}_${uuidv4()}_${imageUpload.name}`);
-    uploadBytes(imageRef, imageUpload).then((snapshot) => {
-      getDownloadURL(snapshot.ref).then((url) => {
-        setImageUrls((prev) => [...prev, { url, name: username }]);
-        setImageUpload(null);
-        setDragDropText("Drag & drop any file here");
-        updateUploadData();
-        setShowForm(false);
-        setShowImages(true);
+    uploadBytes(imageRef, imageUpload)
+      .then((snapshot) => {
+        getDownloadURL(snapshot.ref).then((url) => {
+          setImageUrls((prev) => [...prev, { url, name: username }]);
+          setImageUpload(null);
+          setDragDropText("Drag & drop any file here");
+          updateUploadData();
+          setShowForm(false);
+          setShowImages(true);
+        });
+      })
+      .catch((error) => {
+        setErrorMessage("Failed to upload image. Please try again later.");
+        setShowCannotUploadMessage(true);
       });
-    }).catch(error => {
-      setErrorMessage("Failed to upload image. Please try again later.");
-      setShowCannotUploadMessage(true);
-    });
   };
 
   const handleDragOver = (e) => {
@@ -168,9 +196,19 @@ export default function Pussy() {
   };
 
   const toggleFormVisibility = () => {
-    setShowForm((prev) => !prev);
+    setShowForm((prev) => {
+      const newState = !prev;
+      toggleBodyScrolling(newState);
+      return newState;
+    });
     setShowImages((prev) => !prev);
   };
+
+  useEffect(() => {
+    return () => {
+      document.body.style.overflowY = "auto";
+    };
+  }, []);
 
   const handleThumbnailClick = (url) => {
     setSelectedImage(url);

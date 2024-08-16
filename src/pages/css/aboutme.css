@@ -1,3 +1,6 @@
+* {
+  transition: all 0.1s ease-in-out;
+}
 @media (min-width: 1000px) {
 
   
@@ -189,8 +192,8 @@
   border: 1px solid rgba(162, 241, 252, 0.5);
   border-radius: 10px;
   overflow: hidden;
-  width: 400px;
-  height: 550px;
+  width: 300px;
+  height: 450px;
   position: relative;
   box-shadow: 0 0 30px rgb(0, 0, 0);
 
@@ -234,7 +237,7 @@
     border-radius: 10px;
     margin-top: 20px;
     background-color: rgba(22, 22, 22, 0.555);
-    height: 250px;
+    height: 240px;
 }
 
 .username {
@@ -247,7 +250,7 @@
 
 .badges {
     position: absolute;
-    margin: -12% 0 0 50%;
+    margin: -12% 0 0 45%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -258,8 +261,8 @@
 
 
 .badges img {
-    width: 20px;
-    height: 20px;
+    width: 15px;
+    height: 15px;
     margin: 0 5px;
 
 }
@@ -287,7 +290,7 @@ ul {
   align-items: center;
 }
 .socials .icon-content {
-  left: 15%;
+  left: 5%;
   transform: translateX(-100%);
   margin: 0 10px;
   position: relative;
@@ -314,8 +317,8 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 50px;
-  height: 50px;
+  width: 25px;
+  height: 25px;
   border-radius: 50%;
   color: #c2c2c2;
   background-color: #1b1b1b96;
@@ -338,5 +341,108 @@ ul {
   color: #2a475e;
 }
 
+@media (max-width: 768px) {
+  .containerabout {
+  margin-top: 15%;
+  background: linear-gradient(to bottom, rgba(32, 32, 32, 0.178), rgba(22, 22, 22, 0.233));
+  border: 1px solid rgba(162, 241, 252, 0.5);
+  border-radius: 10px;
+  overflow: hidden;
+  width: 200px;
+  height: 350px;
+  position: relative;
+  box-shadow: 0 0 30px rgb(0, 0, 0);
 
+}
+  .badges {
+    position: absolute;
+    margin: -12% 0 0 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(19, 19, 19, 0.747);
+    border-radius: 7px;
+    padding: 5px;
+}
+
+.info {
+  padding: 5%;
+  border-radius: 10px;
+  margin-top: 20px;
+  background-color: rgba(22, 22, 22, 0.555);
+  height: 150px;
+}
+.badges img {
+    width: 15px;
+    height: 15px;
+    margin: 0 5px;
+
+}
+  .social-container {
+    margin-top: 5px;
+    border-radius: 20px;
+    background-color: #0000005b;
+    padding: 0.1%;
+  }
+  ul {
+    list-style: none;
+  }
+  
+  .socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .socials .icon-content {
+    left: 5%;
+    transform: translateX(-100%);
+    margin: 0 10px;
+    position: relative;
+  }
+  .socials .icon-content .tooltip {
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    padding: 0px 10px;
+    border-radius: 5px;
+    opacity: 0;
+    visibility: hidden;
+    font-size: 14px;
+    transition: all 0.3s ease;
+  }
+  .socials .icon-content:hover .tooltip {
+    opacity: 1;
+    visibility: visible;
+    top: -50px;
+  }
+  .socials .icon-content .link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    color: #c2c2c2;
+    background-color: #1b1b1b96;
+    transition: all 0.3s ease-in-out;
+  }
+  .socials .icon-content .link:hover {
+    box-shadow: 3px 2px 45px 0px rgb(0 0 0 / 12%);
+  }
+  .socials .icon-content .link svg {
+    width: 30px;
+    height: 30px;
+  }
+  .socials .icon-content .link[data-social="spotify"]:hover {
+    color: #1db954;
+  }
+  .socials .icon-content .link[data-social="discord"]:hover {
+    color: #7299ee;
+  }
+  .socials .icon-content .link[data-social="steam"]:hover {
+    color: #2a475e;
+  }
+}
     }

@@ -178,7 +178,7 @@ body {
   /* The upload Form just  look at the class names*/
 
 .form-container {
-  margin-top: 3%;
+  margin-top: 5%;
   color: rgb(192, 192, 192);
 	display: flex;
    	justify-content: center;
@@ -188,7 +188,7 @@ body {
   transition: all ease-in-out 0.3s;
 	background-color: #1d1d1d3b;
 	width: 420px;
-	padding: 30px 60px;
+	padding: 20px 40px;
 	border-radius: 40px;
 	display: flex;
    	align-items: center;
@@ -200,7 +200,7 @@ body {
 	border: 2px dashed rgb(162, 242, 252);
 	border-radius: 40px;
 	margin: 10px 0 15px;
-	padding: 30px 50px;
+	padding: 20px 40px;
 	width: 350px;
 	text-align: center;
 }
@@ -424,8 +424,8 @@ body {
 }
 
 .image-container img {
-  width: 200px;
-  height: 200px;
+  width: 180px;
+  height: 180px;
   object-fit: cover;
   transition: all ease-in-out 0.4s;
   border-radius: 25px;
@@ -707,7 +707,7 @@ body {
   /* The upload Form just  look at the class names*/
 
 .form-container {
-  margin-top: 3%;
+  margin-top: 8%;
   color: rgb(192, 192, 192);
 	display: flex;
    	justify-content: center;
@@ -716,12 +716,12 @@ body {
 .upload-files-container {
   transition: all ease-in-out 0.3s;
 	background-color: #1d1d1d3b;
-	width: 420px;
-	padding: 30px 60px;
-	border-radius: 40px;
+	width: 350px;
+	padding: 10px 30px;
+	border-radius: 30px;
 	display: flex;
-   	align-items: center;
-   	justify-content: center;
+  align-items: center;
+  justify-content: center;
 	flex-direction: column;
 	box-shadow: rgba(0, 0, 0, 0.24) 0px 10px 20px, rgba(0, 0, 0, 0.28) 0px 6px 6px;
 }
@@ -729,19 +729,19 @@ body {
 	border: 2px dashed rgb(162, 242, 252);
 	border-radius: 40px;
 	margin: 10px 0 15px;
-	padding: 30px 50px;
-	width: 350px;
+	padding: 10px 20px;
+	width: 280px;
 	text-align: center;
 }
 .drag-file-area .upload-icon {
-	font-size: 50px;
+	font-size: 30px;
 }
 .drag-file-area h3 {
-	font-size: 26px;
+	font-size: 20px;
 	margin: 15px 0;
 }
 .drag-file-area label {
-	font-size: 19px;
+	font-size: 15px;
 }
 .drag-file-area label .browse-files-text {
 	color: rgb(162, 242, 252);
@@ -788,7 +788,7 @@ body {
 
 /* The Upload button the same as at the homepageee  */
 
-.animated-button {
+.animated-button-upload {
   top: 100%;
   position: relative;
   display: flex;
@@ -810,7 +810,7 @@ body {
   
 }
 
-.animated-button i {
+.animated-button-upload i {
   position: absolute;
   width: 24px;
   fill: rgb(162, 242, 252);
@@ -818,11 +818,11 @@ body {
   transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
-.animated-button i {
+.animated-button-upload i {
   left: -25%;
 }
 
-.animated-button .circle {
+.animated-button-upload .circle {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -835,7 +835,7 @@ body {
   transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
-.animated-button .text {
+.animated-button-upload .text {
   font-family: 'Minecraft', sans-serif;
   position: relative;
   z-index: 1;
@@ -843,29 +843,29 @@ body {
 
 }
 
-.animated-button:hover {
+.animated-button-upload:hover {
   box-shadow: 0 0 0 12px transparent;
   color: #212121;
   border-radius: 12px;
 }
 
-.animated-button:hover i {
-  left: 20px;
+.animated-button-upload:hover i {
+  left: 10px;
 }
 
-.animated-button:hover .text {
+.animated-button-upload:hover .text {
   transform: translateX(12px);
 }
 
-.animated-button svg {
+.animated-button-upload svg {
   fill: #212121;
 }
 
-.animated-button:active {
+.animated-button-upload:active {
   scale: 0.95;
   box-shadow: 0 0 0 4px rgb(162, 242, 252);
 }
-.animated-button:hover .circle {
+.animated-button-upload:hover .circle {
   width: 220px;
   height: 220px;
   opacity: 1;
@@ -944,7 +944,7 @@ body {
 .image-container {
   margin-top: 2%;
   text-align: center; 
-  width: 1200px;
+  width: 800px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -953,13 +953,61 @@ body {
 }
 
 .image-container img {
-  width: 200px;
-  height: 200px;
+  width: 120px;
+  height: 120px;
   object-fit: cover;
   transition: all ease-in-out 0.4s;
   border-radius: 25px;
   margin-bottom: 20px;
 
+}
+@media (max-width: 768px) {
+  .image-container {
+    margin-top: 2%;
+    text-align: center; 
+    width: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    transition: margin-left 0.3s ease-in-out;
+    padding: 10px; /* Adjust as needed */
+  }
+  .image-container img {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    transition: all ease-in-out 0.4s;
+    border-radius: 25px;
+    margin-bottom: 20px;
+  
+  }
+  .form-container {
+    margin-top: 10%;
+    color: rgb(192, 192, 192);
+    display: flex;
+       justify-content: center;
+    align-items: center;
+  }
+  .upload-files-container {
+    transition: all ease-in-out 0.3s;
+    background-color: #1d1d1d3b;
+    width: 50%;
+    padding: 10px 30px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 10px 20px, rgba(0, 0, 0, 0.28) 0px 6px 6px;
+  }
+  .drag-file-area {
+    border: 2px dashed rgb(162, 242, 252);
+    border-radius: 40px;
+    margin: 10px 0 15px;
+    padding: 10px 20px;
+    width: 200px;
+    text-align: center;
+  }
 }
 
 .image-wrapper:hover { 
@@ -1044,7 +1092,7 @@ body {
   }
   
   .form-wrapper.slide-out {
-    left: -100%;
+    left: -300vw;
   }
   
 
