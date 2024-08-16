@@ -717,7 +717,7 @@ body {
   transition: all ease-in-out 0.3s;
 	background-color: #1d1d1d3b;
 	width: 350px;
-	padding: 10px 30px;
+	padding: 20px 40px;
 	border-radius: 30px;
 	display: flex;
   align-items: center;
@@ -729,19 +729,19 @@ body {
 	border: 2px dashed rgb(162, 242, 252);
 	border-radius: 40px;
 	margin: 10px 0 15px;
-	padding: 10px 20px;
+	padding: 30px 40px;
 	width: 280px;
 	text-align: center;
 }
 .drag-file-area .upload-icon {
-	font-size: 30px;
+	font-size: 40px;
 }
 .drag-file-area h3 {
 	font-size: 20px;
-	margin: 15px 0;
+	margin: 20px 0;
 }
 .drag-file-area label {
-	font-size: 15px;
+	font-size: 20px;
 }
 .drag-file-area label .browse-files-text {
 	color: rgb(162, 242, 252);
@@ -991,7 +991,7 @@ body {
   .upload-files-container {
     transition: all ease-in-out 0.3s;
     background-color: #1d1d1d3b;
-    width: 50%;
+    width: 300px;
     padding: 10px 30px;
     border-radius: 30px;
     display: flex;
@@ -1004,8 +1004,8 @@ body {
     border: 2px dashed rgb(162, 242, 252);
     border-radius: 40px;
     margin: 10px 0 15px;
-    padding: 10px 20px;
-    width: 200px;
+    padding: 40px 30px;
+    width: 250px;
     text-align: center;
   }
 }

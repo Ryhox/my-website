@@ -380,7 +380,7 @@ export default function Pussy() {
                     </span>
                     <h3 className="dynamic-message">{dragDropText}</h3>
                     <label className="label">
-                      or{" "}
+                      {" "}
                       <span className="browse-files">
                         <input
                           type="file"
