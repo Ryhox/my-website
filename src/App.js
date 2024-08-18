@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/home";
-import Pussy from "./pages/pussy";
+import Upload from "./pages/uploadPics";
 import Aboutme from "./pages/aboutme";
 import Games from "./pages/games";
 import No from "./pages/NO";
@@ -16,7 +16,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} /> 
           <Route path="/home" element={<Home />} />
-          <Route path="/pussy" element={<Pussy />} />
+          <Route path="/upload" element={<Upload />} />
           <Route path="/aboutme" element={<Aboutme />} />
           <Route path="/games" element={<Games />} />
           <Route path="*" element={<No/>} />
