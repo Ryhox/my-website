@@ -183,6 +183,8 @@ body {
 	display: flex;
    	justify-content: center;
 	align-items: center;
+  z-index: 1;
+
 }
 .upload-files-container {
   transition: all ease-in-out 0.3s;
@@ -362,6 +364,7 @@ body {
   transition-duration: 0.3s;
   overflow: hidden;
   position: fixed;
+  z-index: 9999;
 }
 
 .button i {
@@ -421,6 +424,7 @@ body {
   justify-content: center;
   transition: margin-left 0.3s ease-in-out;
   padding: 10px; /* Adjust as needed */
+  z-index: 1;
 }
 
 .image-container img {
@@ -430,21 +434,23 @@ body {
   transition: all ease-in-out 0.4s;
   border-radius: 25px;
   margin-bottom: 20px;
-
+  z-index: 1;
 }
 
 .image-wrapper:hover { 
   box-shadow: 0 0 0 3px rgba(21, 255, 0, 0.158);
   cursor: pointer;
   transform: translateY(-5px) scale(1.05);
-}
+  z-index: 1;}
 
 .image-container.show {
   margin-left: 0;
+
 }
 
 .image-container.hide {
   margin-left: 250%;
+
 }
 .image-wrapper {
   transition: all ease-in-out 0.4s;
@@ -453,6 +459,7 @@ body {
   border-radius: 25px;
   margin: 10px;
   padding: 2%;
+  z-index: 1;
 }
 .image-username {
   color: rgb(204, 204, 204);
@@ -461,11 +468,15 @@ body {
 }
 .image-username i {
   font-size: 14px;
+  z-index: 9;
+
 }
 .image-username-color {
   color: rgb(0, 238, 255);
   margin-top: -2%;
   display: inline;
+  z-index: 9;
+
 }
 
 
@@ -507,7 +518,7 @@ body {
     left: -100%;
     width: 100%;
     transition: left 0.3s ease-in-out;
-    z-index: 10;
+    z-index: 1;
   }
   
   .form-wrapper.slide-in {
@@ -712,6 +723,8 @@ body {
 	display: flex;
    	justify-content: center;
 	align-items: center;
+  z-index: 1;
+
 }
 .upload-files-container {
   transition: all ease-in-out 0.3s;
@@ -724,6 +737,8 @@ body {
   justify-content: center;
 	flex-direction: column;
 	box-shadow: rgba(0, 0, 0, 0.24) 0px 10px 20px, rgba(0, 0, 0, 0.28) 0px 6px 6px;
+  z-index: 1;
+
 }
 .drag-file-area {
 	border: 2px dashed rgb(162, 242, 252);
@@ -775,14 +790,7 @@ body {
 	border-radius: 25px;
 	cursor: pointer;
 }
-.file-info {
-	display: flex;
-	align-items: center;
-	font-size: 15px;
-}
-.file-icon {
-	margin-right: 10px;
-}
+
 
 
 
@@ -891,6 +899,7 @@ body {
   transition-duration: 0.3s;
   overflow: hidden;
   position: fixed;
+  z-index: 9999;
 }
 
 .button i {
@@ -949,7 +958,8 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   transition: margin-left 0.3s ease-in-out;
-  padding: 10px; /* Adjust as needed */
+  padding: 10px; 
+  z-index: 1;
 }
 
 .image-container img {
@@ -959,7 +969,7 @@ body {
   transition: all ease-in-out 0.4s;
   border-radius: 25px;
   margin-bottom: 20px;
-
+  z-index: 1;
 }
 @media (max-width: 768px) {
   .image-container {
@@ -970,7 +980,8 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     transition: margin-left 0.3s ease-in-out;
-    padding: 10px; /* Adjust as needed */
+    padding: 10px; 
+    z-index: 1;
   }
   .image-container img {
     width: 140px;
@@ -979,7 +990,7 @@ body {
     transition: all ease-in-out 0.4s;
     border-radius: 25px;
     margin-bottom: 20px;
-  
+    z-index: 1;
   }
   .form-container {
     margin-top: 10%;
@@ -987,6 +998,7 @@ body {
     display: flex;
        justify-content: center;
     align-items: center;
+    z-index: 1;
   }
   .upload-files-container {
     transition: all ease-in-out 0.3s;
@@ -1018,10 +1030,12 @@ body {
 
 .image-container.show {
   margin-left: 0;
+  z-index: 1;
 }
 
 .image-container.hide {
   margin-left: 250%;
+  z-index: 1;
 }
 .image-wrapper {
   transition: all ease-in-out 0.4s;
@@ -1030,6 +1044,7 @@ body {
   border-radius: 25px;
   margin: 10px;
   padding: 2%;
+  z-index: 1;
 }
 .image-username {
   color: rgb(204, 204, 204);
@@ -1084,7 +1099,7 @@ body {
     left: -100%;
     width: 100%;
     transition: left 0.3s ease-in-out;
-    z-index: 10;
+    z-index: 1;
   }
   
   .form-wrapper.slide-in {
