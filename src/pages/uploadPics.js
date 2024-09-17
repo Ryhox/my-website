@@ -24,6 +24,7 @@ export default function UploadPics() {
   const MAX_FILE_SIZE = 5 * 1024 * 1024; // 5MB
   const MAX_UPLOADS_PER_DAY = 3;
   const COOLDOWN_PERIOD = 10;
+  const MAX_USERNAME_LENGTH = 13;
 
   const imagesListRef = ref(storage, "images/");
 
@@ -36,10 +37,10 @@ export default function UploadPics() {
     );
   };
 
-  // Set drag and drop text based on the device type
+
   useEffect(() => {
     if (isMobileDevice()) {
-      setDragDropText(""); // Disable drag-and-drop text for mobile users
+      setDragDropText(""); 
     } else {
       setDragDropText("Drag & drop any file here");
     }
@@ -121,6 +122,12 @@ export default function UploadPics() {
 
     if (!username) {
       setErrorMessage("Please enter your username.");
+      setShowCannotUploadMessage(true);
+      return;
+    }
+
+      if (!username || username.length > MAX_USERNAME_LENGTH) {
+      setErrorMessage(`Please enter a valid username (up to ${MAX_USERNAME_LENGTH} characters).`);
       setShowCannotUploadMessage(true);
       return;
     }
